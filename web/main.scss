@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#output {
+  padding: 20px;
+  text-align: center;
+}
+
+#data {
+  padding: 20px;
+  visibility: hidden;
+}
+
+#users-table {
+  margin-top: 40px;
+}
+
+.mooncake-color {
+  background: linear-gradient(to right, #8164E5, #904FFF) !important;
+}
