@@ -1,5 +1,5 @@
 import 'package:graphql/internal.dart';
-import 'package:mooncake_analytics/export.dart';
+import 'package:mooncake_leaderboard/export.dart';
 import 'package:graphql/client.dart';
 import 'package:meta/meta.dart';
 
@@ -14,7 +14,7 @@ class AnalyticsClient {
         );
 
   AnalyticsData _mapData(dynamic data) {
-    final result = data["post"];
+    final result = data['posts'];
     final posts = result.map((element) => Post.fromJson(element)).toList();
 
     final analytics = AnalyticsData();
@@ -33,12 +33,12 @@ class AnalyticsClient {
         '2bdf5932925584b9a86470bea60adce69041608a447f84a3317723aa5678ec88';
     final query = '''
     subscription PostsSubscription {
-      post(where: {subspace: {_eq: "$subspace"}}) {
-        user {
+      posts: post(where: {subspace: {_eq: "$subspace"}}) {
+        user: creator {
           address
         }
         reactions {
-          user {
+          user: owner {
             address
           }
         }

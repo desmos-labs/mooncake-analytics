@@ -1,4 +1,4 @@
-import 'package:mooncake_analytics/models/export.dart';
+import 'package:mooncake_leaderboard/models/export.dart';
 
 /// Contains the analytics data extracted for Mooncake.
 class AnalyticsData {

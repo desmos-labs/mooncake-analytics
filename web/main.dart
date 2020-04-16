@@ -1,6 +1,6 @@
 import 'dart:html';
 
-import 'package:mooncake_analytics/export.dart';
+import 'package:mooncake_leaderboard/export.dart';
 
 void main() async {
   final loading = querySelector('#loading');
@@ -9,7 +9,7 @@ void main() async {
   loading.text = 'Loading data...';
 
   // Get the data
-  final url = 'ws://35.234.80.165:8080/v1/graphql';
+  final url = 'ws://gql.morpheus.desmos.network:8080/v1/graphql';
   final client = AnalyticsClient(gqlHost: url);
   client.getData().listen((data) {
     handleData(data);

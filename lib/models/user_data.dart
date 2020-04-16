@@ -1,4 +1,4 @@
-import 'package:mooncake_analytics/models/export.dart';
+import 'package:mooncake_leaderboard/models/export.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 

@@ -1,6 +1,6 @@
-name: mooncake_analytics
+name: mooncake_leaderboard
 description: An absolute bare-bones web app.
-version: 0.1.0
+version: 0.1.1+01100
 homepage: https://www.example.com
 
 environment:
