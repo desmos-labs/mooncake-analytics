@@ -9,7 +9,7 @@ void main() async {
   loading.text = 'Loading data...';
 
   // Get the data
-  final url = 'ws://gql.morpheus.desmos.network:8080/v1/graphql';
+  final url = 'wss://gql.morpheus.desmos.network/v1/graphql';
   final client = AnalyticsClient(gqlHost: url);
   client.getData().listen((data) {
     handleData(data);
